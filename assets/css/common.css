@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Sans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sans-bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBoldwoff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-Core';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* html::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+html::-webkit-scrollbar-track {
+  background: #a8a8a8;
+}
+html::-webkit-scrollbar-thumb {
+  background: rgb(240, 16, 16);
+  border-radius: 10px;
+} */
+
+/* 기본 세팅 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.wrap {
+  width: 1920px;
+  margin: 0 auto;
+}
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+/* 백그라운드 */
+.bgRed {
+  background-color: rgb(240, 16, 16);
+}
+/* transition, opacity */
+.trans {
+  transition: 0.5;
+  opacity: 0;
+}
+
+@media only screen and (min-width:100px) and (max-width:1920px) {
+  .wrap{
+    width: 100%;
+  } 
+}

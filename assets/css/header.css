@@ -1,0 +1,37 @@
+header{
+    height: 100px;
+    background-color: rgb(2,2,1);
+    padding: 0 30px;
+
+}
+
+header ul li{
+    font-size: 24px;
+    font-family: "sans";
+    font-weight: bold;
+    color: white;
+}
+
+header .headerMenuBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+header .headerMenuBox .headerLogoBox{
+    display: flex;
+    justify-content: center;
+}
+
+header .headerMenuBox div img{
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+}
+
+header .headerMenuBox ul{
+    display: flex;
+    gap:60px;
+}

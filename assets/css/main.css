@@ -1,0 +1,400 @@
+/*firstSection*/
+#section1{
+    position: relative;
+    z-index: 2;
+}
+#section1 > img{
+    width: 100%;
+}
+#section1 .section1Content img{
+    position: absolute;
+}
+
+#section1 .section1Content .title{
+    top: 5%;
+    left: 25%;
+    width: 50%;
+}
+#section1 .section1Content .food{
+    top: 70%;
+    left: 25%;
+    width: 50%;
+}
+
+#section1-2{
+    position: relative;
+    z-index: 2;
+    margin-top: 20%;
+    margin-bottom: 120px;
+}
+#section1-2 .description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+#section1-2 .description .desText{
+    font-size: 48px;
+    font-family: "Sans";
+    font-weight: 900;
+    letter-spacing: -5px;
+}
+#section1-2 .description .desText .FR {
+    color: red;
+}
+@media screen and (max-width:1200px) {
+    #section1-2 .description .desText{
+        font-size: 36px;
+    }
+    #section1-2 .description img{
+        width: 5%;
+    }
+}
+@media screen and (max-width:900px) {
+    #section1-2 .description .desText{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width:700px) {
+    #section1-2 .description .desText{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:500px) {
+    #section1-2 .description{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    #section1-2 .description .desText{
+        font-size: 16px;
+    }
+}
+
+#section2{
+    z-index: 2;
+    background: url("../img/02-뒷배경.jpg");
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+#section2 .section2Content{
+    width: 1200px;
+    background-color: rgba(245, 245, 245, 0.5);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#section2 .sec2Line{
+    position: absolute;
+    top: 53%;
+    left:18%;
+    width: 65%;
+}
+
+#section2 .system{
+    text-align: center;
+}
+#section2 .process{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px 0 40px 0;
+}
+#section2 .sec2DesText{
+    width: 100%;
+    background-color: rgb(50,50,50);
+    padding: 40px 0;
+    text-align: center;
+}
+#section2 .sec2DesText h2{
+    font-family: "sans";
+    font-size: 34px;
+    color: #fff;
+}
+#section2 .sec2DesText h2 span{
+    font-size: 34px;
+    color: rgb(255,240,0);
+    font-style: italic;
+    text-decoration: underline;
+}
+@media screen and (max-width : 1650px) {
+    #section2 .section2Content{
+        height: 80%;
+        width: 80%;
+    }
+    #section2 .section2Content .system{
+    }
+    #section2 .section2Content .system img{
+        width: 70%;
+    }
+    #section2 .section2Content .system img:nth-child(3){
+    }
+    #section2 .section2Content .process{}
+    #section2 .section2Content .process img{
+    }
+    #section2 .section2Content .sec2DesText h2{
+        font-size: 28px;
+    }
+    #section2 .sec2DesText{
+        padding: 20px 0;
+    }
+    #section2 .sec2DesText h2 span{
+        font-size: 28px;
+    }
+
+}
+@media screen and (max-width : 1200px) {
+    #section2 .section2Content .process img{
+        width: 20%;
+    }
+    #section2 .section2Content .process img:nth-child(3){
+        width: 18%
+    }
+    #section2 .section2Content .sec2DesText h2{
+        font-size: 16px;
+    }
+    #section2 .sec2DesText h2 span{
+        font-size: 16px;
+    }
+}
+
+/*sec03*/
+#section3{
+    z-index: 2;
+    background: url("../img/03-뒷배경.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+#section3 .sec3Title{
+    padding-bottom: 40px;
+}
+#section3 .spBubble{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#section3 .spBubble .sp2,.sp3,.sp4,.sp5{
+    position: absolute;
+}
+#section3 .spBubble .sp2{
+    left: -55%;
+    top: 5%;
+}
+#section3 .spBubble .sp3{
+    left: 100%;
+    top: 5%;
+}
+#section3 .spBubble .sp4{
+    left: -45%;
+    top: 38%;
+}
+#section3 .spBubble .sp5{
+    left: 90%;
+    top: 38%;
+}
+
+#section3 .description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#section3 .description .desText h2{
+    font-size: 48px;
+    font-family: "Sans";
+    letter-spacing: -5px;
+    font-weight: 900;
+}
+#section3 .description .desText h4{
+    font-family: "S-Core";
+    font-weight: bold;
+    font-size: 24px;
+}
+#section3 .description .desText span {
+    font-family: "S-Core";
+    color: red;
+}
+@media screen and (max-width:1600px) {
+    #section3 .sec3Title img{
+        width: 100%;
+    }
+    #section3 .spBubble .sp1{
+        width: 100%;
+    }
+    #section3 .spBubble .sp2,.sp3,.sp4,.sp5{
+        width: 40%;
+    } 
+    #section3 .spBubble .sp2{
+        left: -20%;
+        top: 5%;
+    }
+    #section3 .spBubble .sp3{
+        left: 80%;
+        top: 5%;
+    }
+    #section3 .spBubble .sp4{
+        left: -15%;
+        top: 38%;
+    }
+    #section3 .spBubble .sp5{
+        left: 70%;
+        top: 38%;
+    }
+}
+@media screen and (max-width:800px) {
+    #section3 .sec3Title img{
+        width: 100%;
+    }
+    #section3 .spBubble .sp1{
+        width: 90%;
+    }
+    #section3 .spBubble .sp2,.sp3,.sp4,.sp5{
+        width: 40%;
+    } 
+    #section3 .spBubble .sp2{
+        left: 10%;
+        top: 5%;
+    }
+    #section3 .spBubble .sp3{
+        left: 50%;
+        top: 5%;
+    }
+    #section3 .spBubble .sp4{
+        left: 10%;
+        top: 38%;
+    }
+    #section3 .spBubble .sp5{
+        left: 50%;
+        top: 38%;
+    }
+}
+
+/*section4*/
+#section4{
+    z-index: 2;
+    background: url("../img/04-뒷배경.png");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 30px 0;
+}
+#section4 .sec4Circle{
+    display: flex;
+    justify-content: center;
+}
+#section4 .sec4Plus{
+    margin-top: 20px;
+}
+#section4 .description{
+    font-family: "S-Core";
+    font-size: 32px;
+    font-weight: 900;
+    background-color: rgb(255,240,0);
+    padding: 5px 25px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+@media screen and (max-width:1200px) {
+    #section4 .sec4Title{
+        padding: 0 50px;
+    }
+    #section4 .sec4Title img{
+        width: 100%;
+    }
+    #section4 .sec4Circle img{
+        width: 30%;
+    }
+    #section4 .sec4Plus img{
+        width: 100%;
+    }
+}
+
+/*section5*/
+#section5{
+    position: relative;
+    z-index: 2;
+}
+#section5 > img{
+    width: 100%;
+}
+#section5 .section5Content img{
+    position: absolute;
+}
+#section5 .section5Content .sec5Title{
+    width: 40%;
+    top: 10%;
+    left: 20%;
+}
+#section5 .section5Content .grayBG{
+    width: 68%;
+    transform: translate(-50%,-50%);
+    top: 55%;
+    left: 50%;
+}
+#section5 .section5Content .arrow{
+    width: 15%;
+    top: 5%;
+    left: 65%;
+}
+#section5 .section5Content .sec5Reason{
+    width: 16%;
+    top: 38%;
+    left: 23%;
+}
+#section5 .section5Content .sec5R1,.sec5R2,.sec5R3,.sec5R4,.sec5R5{
+    width: 37%;
+    left: 39%;
+}
+#section5 .section5Content .sec5R1{
+    top: 38%;
+}
+#section5 .section5Content .sec5R2{
+    top: 48.125%
+}
+#section5 .section5Content .sec5R3{
+    top: 58.25%
+}
+#section5 .section5Content .sec5R4{
+    top: 68.375%
+}
+#section5 .section5Content .sec5R5{
+    top: 78.5%;
+}
+
+/*section6*/
+#section6{
+    z-index: 2;
+    background: url("../img/06-뒷배경.png");
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 0 0;
+}
+#section6 .sec6Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section6 .sec6Title .sec6TitleText{
+
+}
+
+@media screen and (max-width:1100px) {
+
+    #section6 .sec6Title{
+        width: 100%;
+
+    }
+    #section6 .sec6Title img{
+        width: 100%;
+    }   
+}
