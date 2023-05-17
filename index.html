@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/sec2.css">
+    
     <script src="./assets/js/wow.min.js"></script>
+    <script src="./lib/swiper.js"></script>
+    <link rel="stylesheet" href="./lib/swiper.css">
     <script>new WOW().init()</script>
 </head>
 <body>
@@ -21,7 +25,7 @@
                 <div class="headerLogoBox ">
                     <img src="./assets/img/header/05-타코잉닭 로고.png" alt="">
                 </div>
-                <ul>
+                <ul class="pc">
                     <li>경쟁력</li>
                     <li>성공노하우</li>
                     <li>메뉴소개</li>
@@ -53,22 +57,95 @@
 
         <div id="section2" class="section">
             <div class="section2Content">
-                <img class="sec2Line" src="./assets/img/02-line.png" alt="">
+                
                 <div class="system">
-                    <img src="./assets/img/02-sec2title.png" alt="">
+                    <div class="pc"><img src="./assets/img/02-일러스트.png"></div>
+                    <div class="systemInner">
+                        <p>타코잉닭의</p>
+                        <h2>
+                            <img src="./assets/img/02-3WAY.png">
+                            <span>System</span>
+                        </h2>
+                    </div>
                 </div>
-                <div class="process">
-                    <img src="./assets/img/02-shop.png" alt="">
-                    <img src="./assets/img/02-home.png" alt="">
-                    <img src="./assets/img/02-wrap.png" alt="">
-                </div>
+
+                <ul class="process">
+                    <div class="line pc"></div>
+                    <li>
+                        <div class="icon">
+                            <img
+                                class="wow fadeinup" 
+                                src="./assets/img/02-아이콘1.png"></div>
+                        <div class="pc"><img class="circle" src="./assets/img/02-빨간색 원.png"></div>
+                        <div class="t-box">
+                            <h4>샵인샵 배달</h4>
+                            <p>
+                                기존 매장에 사이드메뉴<br class="pc">
+                                또는 세트메뉴로<br class="pc">
+                                추가하여 배달 가능
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon"><img src="./assets/img/02-아이콘2.png"></div>
+                        <div class="pc"><img class="circle" src="./assets/img/02-빨간색 원.png"></div>
+                        <div class="t-box">
+                            <h4>홀 서비스</h4>
+                            <p>
+                                타코야끼, 치킨, 떡볶이 등<br class="pc">
+                                다양한 메뉴로 불황기에도<br class="pc">
+                                안정적인 매출 창출 가능
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon"><img src="./assets/img/02-아이콘3.png"></div>
+                        <div class="pc"><img class="circle" src="./assets/img/02-빨간색 원.png"></div>
+                        <div class="t-box">
+                            <h4>포장 판매</h4>
+                            <p>
+                                튀김기만 있는 가게에서<br class="pc">
+                                포장판매 가능                   
+                            </p>
+                        </div>
+                    </li>
+                </ul>
                 <div class="sec2DesText">
                     <h2>다양한 판매가 가능하여</h2>
                     <h2><span>안정적인 매출 상승</span> 이 가능한 아이템입니다.</h2>
                 </div>
             </div>
-            
         </div>
+
+        <!-- <div id="section2">
+            <img src="./assets/img/02-뒷배경.jpg">
+            <div class="section2Content">
+                <img class="sec2Box" src="./assets/img/02-box.png">
+                <img 
+                    class="sec2Title wow fadeInUp" 
+                    src="./assets/img/02-sec2title.png">
+                <img 
+                    class="sec2pro1 wow fadeInUp"
+                    data-wow-delay="0.25s"
+                    src="./assets/img/02-shop.png">
+                <img 
+                    class="sec2pro2 wow fadeInUp"
+                    data-wow-delay="0.5s"
+                    src="./assets/img/02-home.png">
+                <img 
+                    class="sec2pro3 wow fadeInUp" 
+                    data-wow-delay="0.75s"
+                    src="./assets/img/02-wrap.png">
+                <img 
+                    class="sec2Line wow fadeIn" 
+                    data-wow-delay="1.3s"
+                    src="./assets/img/02-line.png">
+                <img 
+                    class="sec2Text wow flash"
+                    data-wow-duration="3s" 
+                    src="./assets/img/02-text.png">
+            </div>
+        </div> -->
 
         <div id="section3">
             <div class="sec3Title">
@@ -120,9 +197,10 @@
         <div id="section5">
             <img src="./assets/img/05-뒷배경.jpg">
             <div class="section5Content">
-                <img class="sec5Title" src="./assets/img/05-sec5Title.png">
-                <img class="grayBG" src="./assets/img/05-흰색배경.png">
-                <img class="arrow" src="./assets/img/05-그래프 화살표.png">
+                <img class="sec5Title pc" src="./assets/img/05-sec5Title.png">
+                <img class="grayBG pc " src="./assets/img/05-흰색배경.png">
+                <img class="arrow pc" src="./assets/img/05-그래프 화살표.png">
+                <div></div>
                 <img src="./assets/img/05-reason.png" class="sec5Reason">
                 <img src="./assets/img/05-reason01.png" class="sec5R1">
                 <img src="./assets/img/05-reason02.png" class="sec5R2">
@@ -133,26 +211,182 @@
         </div>
 
         <div id="section6">
-            <div class="sec6Title">
-                <div class="sec6TitleText">
-                    <img  src="./assets/img/06-sec6Title.png">
-                </div>
-                <div class="char">   
-                    <img  src="./assets/img/06-캐릭터.png">
-                </div>
-            </div>
-            <div class="">
-
-            </div>
-            <div>
-                
+            <img src="./assets/img/06-뒷배경.png">
+            <div class="section6Content">
+                <img class="sec6Title" src="./assets/img/06-sec6Title.png">
+                <img class="sec6Char" src="./assets/img/06-캐릭터.png">
+                <img class="sec6Box1" src="./assets/img/06-빨간색 상자1.png">
+                <img class="sec6Coin1" src="./assets/img/06-동전.png">
+                <img class="sec6Box2" src="./assets/img/06-빨간색 상자2.png">
+                <img class="sec6Coin2" src="./assets/img/06-동전.png">
+                <img class="sec6Text" src="./assets/img/06-sec6Text.png">
             </div>
         </div>
 
+        <div id="section7">
+            <div class="sec7Title">
+                <img src="./assets/img/07-sec7Title.png" alt="">
+            </div>
+                <div class="sec7Swiper">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="./assets/img/07-매장5.png"></div>
+                            <div class="swiper-slide"><img src="./assets/img/07-매장1.png"></div>
+                            <div class="swiper-slide"><img src="./assets/img/07-매장2.png"></div>
+                            <div class="swiper-slide"><img src="./assets/img/07-매장3.png"></div>
+                            <div class="swiper-slide"><img src="./assets/img/07-매장4.png"></div>
+                        </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            <div class="sec7Calc">
+                <span>** 2023년 1월 기준 / 마진율 = (판매금액-원가)/(판매금액)*100%</span>
+            </div>
+        </div>
+
+        <div id="section8">
+            <img src="./assets/img/08-뒷배경.png">
+            <div class="sec8Content">
+                <img class="sec8BBG" src="./assets/img/08-검정배경.png">
+                <img class="sec8Title" src="./assets/img/08-sec8Title.png">
+                <img class="sec8Text" src="./assets/img/08-sec8Text.png">
+                <img class="sec8Graph" src="./assets/img/09-원형그래프.png">
+                <img class="sec8Avg" src="./assets/img/09-도장.png">
+                <img class="sec8TBox" src="./assets/img/09-텍스트박스.png">
+            </div>
+        </div>
+
+        <div id="section9">
+            <img src="./assets/img/09-뒷배경.png">
+            <div class="sec9Content">
+                <img class="sec9Title" src="./assets/img/10-sec10Title.png">
+                <img class="sec9Char1" src="./assets/img/09-sec9Char1.png">
+                <img class="sec9Char2" src="./assets/img/09-sec9Char2.png">
+                <img class="sec9Char3" src="./assets/img/09-sec9Char3.png">
+                <img class="sec9Text" src="./assets/img/10-sec10Text.png">
+            </div>
+        </div>
+
+        <div id="section10">
+            <img src="./assets/img/12-뒷배경.jpg">
+            <!-- <img src="./assets/img/11-complete.png"> -->
+            <div class="sec10Content">
+                <img 
+                    class="sec10Title1 wow fadeInUp" 
+                    src="./assets/img/10-sec10Title1.png">
+                <img class="sec10Title2" src="./assets/img/10-sec10Title4.png">
+                <img class="sec10Title3" src="./assets/img/10-sec10Title3.png">
+                <img class="sec10Menu1" src="./assets/img/11-조리시간1.png">
+                <img class="sec10Menu2" src="./assets/img/11-조리시간2.png">
+                <img class="sec10Menu3" src="./assets/img/11-조리시간3.png">
+                <img class="sec10Menu4" src="./assets/img/11-조리시간4.png">
+                <img class="sec10Menu5" src="./assets/img/11-조리시간5.png">
+                <img class="sec10Menu6" src="./assets/img/11-조리시간6.png">
+                <img class="sec10BText" src="./assets/img/10-sec10BText.png">
+                <img class="sec10BSt" src="./assets/img/12-비교하지마세요.png">
+                <img class="sec10BTitle" src="./assets/img/12-sec12asdad.png">
+                <img class="sec10Box" src="./assets/img/12-테두리배경.jpg">
+            </div>
+        </div>
+
+        <div id="section11">
+            <img src="./assets/img/13-뒷배경.jpg">
+            <div class="sec11Content">
+                <img class="sec11Cert" src="./assets/img/13-인증서.png">
+                <img class="sec11Text" src="./assets/img/11-sec11Text.png">
+            </div>
+        </div>
+
+        <div id="section12">
+            <img src="./assets/img/15-뒷배경.jpg">
+            <!-- <img src="./assets/img/12-com.png"> -->
+            <div class="sec12Content">
+                <img class="sec12Title" src="./assets/img/15-sec15Title.png">
+                <img class="sec12Text" src="./assets/img/15-sec15Text.png">
+            </div>
+        </div>
+
+        <div id="section13">
+            <!-- <img src="./assets/img/16-뒷배경.jpg"> -->
+            <!-- <img src="./assets/img/16-뒷배경-white.png"> -->
+            <img src="./assets/img/13-com.png">
+            <div class="sec13Content">
+                <img class="sec13Title" src="./assets/img/16-sec16Title.png">
+                <img class="sec13Vs" src="./assets/img/16-sec16Vs.png">
+                <img class="sec13Text" src="./assets/img/16-sec16Text.png">
+                <img class="sec13SubText" src="./assets/img/16-sec16Subbox.png">
+            </div>
+        </div>
+
+        <div id="section14">
+            <div class="sec14Title">
+                <img src="./assets/img/14-sec14Title.png">
+            </div>
+            <div class="sec14Swiper">
+                <div class="swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./assets/img/17-포스터1.jpg"></div>
+                        <div class="swiper-slide"><img src="./assets/img/17-포스터2.jpg"></div>
+                        <div class="swiper-slide"><img src="./assets/img/17-포스터3.jpg"></div>
+                        <div class="swiper-slide"><img src="./assets/img/17-포스터4.jpg"></div>
+                        <div class="swiper-slide"><img src="./assets/img/17-포스터5.jpg"></div>
+                        
+                        <div class="swiper2-button-prev"></div>
+                        <div class="swiper2-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer>
 
         </footer>
-    </div>
     
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: -25,
+        autoplay:{
+        delay:2500
+        },
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        });
+
+        const swiper2 = new Swiper('.swiper2', {
+        // Optional parameters
+        loop: true,
+        slidesPerView: 5,
+        spaceBetween: -25,
+        autoplay:{
+        delay:2500
+        },
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper2-button-next',
+            prevEl: '.swiper2-button-prev',
+        },
+        });
+    </script>
 </body>
 </html>

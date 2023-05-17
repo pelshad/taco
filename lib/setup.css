@@ -1,0 +1,96 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+	vertical-align: top;
+    font-size: 14px;
+    line-height: 1.5; 
+    outline: 0px;
+    /*outline: 1px solid black;*/
+}
+
+body{
+    text-align: center;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+ul, ol{
+    list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+ul li, ol li{
+    display: inline-block;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.wrap{
+    display: inline-block;
+    width: 1200px;
+}
+
+.pc{
+    display: inline-block !important;
+}
+
+.mobile{
+    display: none !important;
+}
+
+.flex{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+}
+table{
+    border-collapse: collapse;
+}
+
+caption{
+    display: none;
+}
+
+
+@media only screen and (min-width:100px) and (max-width:1200px){
+	
+	.pc{
+		display: none !important;
+	}
+
+	.mobile{
+		display: inherit!important;
+	}
+	
+	.wrap{
+		width: 100%;
+		padding: 0px 15px;
+	}
+	
+}
+
+@media only screen and (min-width:100px) and (max-width:1000px){
+
+}
+
+@media only screen and (min-width:100px) and (max-width:800px){
+
+}
+
+@media only screen and (min-width:100px) and (max-width:600px){
+
+}
+
+
+
+

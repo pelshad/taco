@@ -35,3 +35,9 @@ header .headerMenuBox ul{
     display: flex;
     gap:60px;
 }
+
+@media screen and (max-width:1200px) {
+    header .pc{
+        display: none !important;
+    }
+}
