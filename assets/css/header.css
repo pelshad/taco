@@ -1,7 +1,6 @@
 header{
-    height: 100px;
     background-color: rgb(2,2,1);
-    padding: 0 30px;
+    padding: 10px 30px;
 
 }
 
@@ -10,6 +9,7 @@ header ul li{
     font-family: "sans";
     font-weight: bold;
     color: white;
+
 }
 
 header .headerMenuBox{
@@ -35,9 +35,69 @@ header .headerMenuBox ul{
     display: flex;
     gap:60px;
 }
+header .headerMenuBox .navIcon{
+    display: none;
+}
+
+header .headerMenuBox .moNavBox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    max-width: 0px;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 1px 3px #00000055;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    transition: max-width .5s;
+
+}
+header .headerMenuBox .moNavBox.on{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    max-width: 200px;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 1px 3px #00000055;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    transition: max-width .5s;
+
+}
+header .headerMenuBox .moNavBox.on li{
+    color: black;
+}
+header .headerMenuBox .moNavBox li{
+    color: white
+}
+
 
 @media screen and (max-width:1200px) {
     header .pc{
         display: none !important;
+    }
+    header .navIcon{
+        display: block !important;
+        font-size: 34px;
+        color: white;
+        cursor: pointer;
+    }
+    header .headerMenuBox div img{
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 70%;
+        height: 70%;
+        padding: 5px;
     }
 }

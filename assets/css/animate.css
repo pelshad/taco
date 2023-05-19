@@ -2817,3 +2817,51 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -webkit-animation-name: rollOut;
   animation-name: rollOut;
 }
+
+@keyframes checkPoint {
+  from {
+    width: 0%;
+    opacity:0;
+  }
+
+  to {
+    width: 59%;
+  }
+}
+
+.checkPoint {
+  -webkit-animation-name: checkPoint;
+  animation-name: checkPoint;
+}
+
+@keyframes checkPoint2 {
+  from {
+    transform: scale(0%,0%) translateX(-50%);
+  }
+
+  to {
+    transform: scale(100%,100%) translateX(0%);
+  }
+}
+
+.checkPoint2 {
+  -webkit-animation-name: checkPoint2;
+  animation-name: checkPoint2;
+}
+
+@keyframes zoomInUp{
+  0% {
+    opacity: 0;
+    transform: translateY(100%) scale(0%);
+
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%) scale(100%);
+  }
+}
+.zoomInUp {
+  -webkit-animation-name: zoomInUp;
+  animation-name: zoomInUp;
+}

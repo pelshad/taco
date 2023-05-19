@@ -20,7 +20,7 @@
   --swiper-theme-color: #007aff;
 }
 .swiper{
-  padding-bottom: 80px;
+  padding-bottom: 0px;
   position: relative;
   overflow: hidden;
 }

@@ -9,15 +9,33 @@
 }
 @font-face {
   font-family: "Sans-bold";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBoldwoff")
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
     format("woff");
-  font-weight: normal;
+  font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'S-Core';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'S-Core-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'S-Core-EBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'S-Core-E2Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -69,6 +87,12 @@ a {
   transition: 0.5;
   opacity: 0;
 }
+.mo{
+  display: none;
+}
+body{
+  position: relative;
+}
 
 @media only screen and (min-width:100px) and (max-width:1920px) {
   .wrap{
@@ -78,5 +102,8 @@ a {
 @media screen and (max-width:600px) {
     .pc{
       display: none;
+    }
+    .mo{
+      display: block;
     }
 }
