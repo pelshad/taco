@@ -37,3 +37,4 @@ menu4mo.addEventListener('click', () => {
 menu5.addEventListener('click', () => {
     document.querySelector("#section15").scrollIntoView({behavior:'smooth'});
 })
+

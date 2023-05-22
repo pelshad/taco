@@ -2209,20 +2209,24 @@ div #sideBar{
 }
 
 @media screen and (max-width:600px) {
+    #section15 form ul{
+        gap: 15px;
+        padding: 0 20px;
+    }
     #section15{
         background: #fff;
     }
 
     #section15 .layout{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     #section15 .layout .firstBox{
-        background: linear-gradient(360deg,rgb(16,16,16),rgb(209, 52, 52));
+        background: linear-gradient(45deg,rgb(16,16,16),rgb(209, 52, 52));
         padding: 60px 0;
     }
     #section15 .layout .firstBox img{
-        width: 60%;
+        width: 50%;
     }
     #section15 .sec15AgreeBox{
         background: rgb(248,248,248);
