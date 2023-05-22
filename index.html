@@ -19,34 +19,36 @@
     <script>new WOW().init()</script>
 </head>
 <body>
-        
-    
     <div class="wrap">
         <header>
             <div class="headerMenuBox">
                 <div class="headerLogoBox ">
-                    <img src="./assets/img/header/05-타코잉닭 로고.png" alt="">
+                    <img src="./assets/img/header/05-타코잉닭 로고.png">
                 </div>
                 <ul class="pc navBox">
-                    <li>경쟁력</li>
-                    <li>성공노하우</li>
-                    <li>메뉴소개</li>
-                    <li>디테일차별화</li>
-                    <li>창업문의</li>
+                    <li class="menu1">경쟁력</li>
+                    <li class="menu2">성공노하우</li>
+                    <li class="menu3">메뉴소개</li>
+                    <li class="menu4pc">디테일차별화</li>
+                    <li class="menu5">창업문의</li>
                 </ul>
 
                 <div class="navIcon">☰</div>
 
                 <ul class="moNavBox">
-                    <li>경쟁력</li>
-                    <li>성공노하우</li>
-                    <li>메뉴소개</li>
-                    <li>디테일차별화</li>
-                    <li>창업문의</li>
+                    <li class="menu1">경쟁력</li>
+                    <li class="menu2">성공노하우</li>
+                    <li class="menu3">메뉴소개</li>
+                    <li class="menu4">디테일차별화</li>
+                    <li class="menu5">창업문의</li>
                 </ul>
             </div>
-                
         </header>
+
+        <div id="sideBar">
+            <div class="topBtn"><img src="./assets/img/00-탑버튼.png"></div>
+            <div><a href="tel:1577-8892"><img src="./assets/img/00-sideTel.png"></a></div>
+        </div>
 
         <div id="section1" class="section">
             <img src="./assets/img/01-뒷배경.png">
@@ -174,36 +176,6 @@
             </div>
         </div>
 
-        <!-- <div id="section2">
-            <img src="./assets/img/02-뒷배경.jpg">
-            <div class="section2Content">
-                <img class="sec2Box" src="./assets/img/02-box.png">
-                <img 
-                    class="sec2Title wow fadeInUp" 
-                    src="./assets/img/02-sec2title.png">
-                <img 
-                    class="sec2pro1 wow fadeInUp"
-                    data-wow-delay="0.25s"
-                    src="./assets/img/02-shop.png">
-                <img 
-                    class="sec2pro2 wow fadeInUp"
-                    data-wow-delay="0.5s"
-                    src="./assets/img/02-home.png">
-                <img 
-                    class="sec2pro3 wow fadeInUp" 
-                    data-wow-delay="0.75s"
-                    src="./assets/img/02-wrap.png">
-                <img 
-                    class="sec2Line wow fadeIn" 
-                    data-wow-delay="1.3s"
-                    src="./assets/img/02-line.png">
-                <img 
-                    class="sec2Text wow flash"
-                    data-wow-duration="3s" 
-                    src="./assets/img/02-text.png">
-            </div>
-        </div> -->
-
         <div id="section3">
             <div class="sec3Title wow fadeInUp">
                 <img src="./assets/img/03-sec3title.png">
@@ -313,7 +285,6 @@
                 <div>
                     <img class="pc wow fadeInUp" data-wow-delay="0.5s" src="./assets/img/06-캐릭터.png" alt="">
                 </div>
-                
             </div>
             <ul class="redBox">
                 <li class="wow fadeInUp" data-wow-delay="1s" data-wow-offset="-100">
@@ -499,11 +470,10 @@
                         <div class="swiper-slide"><img src="./assets/img/17-포스터3.jpg"></div>
                         <div class="swiper-slide"><img src="./assets/img/17-포스터4.jpg"></div>
                         <div class="swiper-slide"><img src="./assets/img/17-포스터5.jpg"></div>
-                        
-                        <div class="swiper2-button-prev"></div>
-                        <div class="swiper2-button-next"></div>
                     </div>
                 </div>
+                <div class="swiper2-button-prev"><img src="./assets/img/17-화살표(왼쪽).png"></div>
+                <div class="swiper2-button-next"><img src="./assets/img/17-화살표(오른쪽).png"></div>
             </div>
         </div>
 
@@ -549,22 +519,22 @@
                         <div class="sec15AgreeBox">
                             <div class="AB1" >
                                 <div>
-                                    <span>개인정보 보호를 위한 이용자 동의서</span>
+                                    <span class="cert">개인정보 보호를 위한 이용자 동의서</span>
                                     <button>상세보기</button>
                                 </div>
                                 <div>
-                                    <input type="radio" name="info"> <span>동의합니다</span>   
-                                    <input type="radio" name="info"> <span>동의하지 않습니다</span> 
+                                    <input type="radio" name="info"> <span class="check">동의합니다</span>   
+                                    <input type="radio" name="info" class="check"> <span>동의하지 않습니다</span> 
                                 </div>
                             </div>
 
                             <div class="AB2">
                                 <div> 
-                                    <span>마케팅 활용 동의서</span><button>상세보기</button>
+                                    <span class="cert">마케팅 활용 동의서</span><button>상세보기</button>
                                 </div>
                                 <div>
-                                    <input type="radio" name="marketing"><span>동의합니다</span> 
-                                    <input type="radio" name="marketing"><span>동의하지 않습니다</span> 
+                                    <input type="radio" name="marketing" class="check"><span>동의합니다</span> 
+                                    <input type="radio" name="marketing" class="check"><span>동의하지 않습니다</span> 
                                 </div>
                             </div>
                         </div>
@@ -574,7 +544,26 @@
             </div>
         </div>
         <footer>
-
+            <div class="wrap12">
+                <div class="logo">
+                    <img src="./assets/img/header/05-타코잉닭 로고.png">
+                </div>
+                <div class="infoBox">
+                    <div>
+                        <span>타코잉닭</span>
+                        <span>대표 이근춘</span>
+                        <span>사업자등록번호 385-81-00142</span>
+                    </div>
+                    <div>
+                        <span>TEL 031-559-8892</span>
+                        <span>FAX 031-595-8892</span>
+                        <span>주소 경기도 성남시 분당구 돌마로 46</span>
+                    </div>
+                    <div>
+                        <span>Copyright 타코잉닭 All Rights Reservied.</span>
+                    </div>
+                </div>
+            </div>
         </footer>
     
     <script>
@@ -609,7 +598,6 @@
         loop: true,
         centeredSlides: true,
         roundLengths: true,
-        
         breakpoints:{
             650:{
                 slidesPerView:5,

@@ -1,3 +1,34 @@
+/*sidebar*/
+div #sideBar{
+    position: fixed;
+    z-index: 999;
+    top: 75%;
+    right: 2%;
+}
+#sideBar div{
+    text-align: end;
+}
+#sideBar div:first-child img{
+    width: 20%;
+    cursor: pointer;
+}
+#sideBar div:first-child{
+    padding-bottom: 20px;
+}
+#sideBar div:nth-child(2) a img{
+    width: 80%;
+}
+@media screen and (max-width:600px) {
+    #sideBar div:first-child{
+        padding-bottom: 10px;
+    }
+    #sideBar div:first-child img{
+        width: 10%;
+    }
+    #sideBar div:nth-child(2) a img{
+        width: 50%;
+    }
+}
 /*firstSection*/
 #section1{
     position: relative;
@@ -40,9 +71,13 @@
 }
 #section1-2 .description .desText h2{
     line-height: 1.2;
+    text-align: center;
+}
+#section1-2 .description .desText:nth-child(1){
+    letter-spacing: -1;
 }
 #section1-2 .description .desText .FR {
-    color: red;
+    color: rgb(211,27,3);
 }
 @media screen and (max-width:1600px) {
     #section1-2 .description .desText{
@@ -105,9 +140,34 @@
     #section1-2 .description .desText{
         font-size: 16px;
         text-align: center;
+    }}
+@media screen and (max-width:400px) {
+    #section1 .section1Content .title{
+        top: 5%;
+        left: 20%;
+        width: 60%;
     }
-
+    #section1 .section1Content .food{
+        top: 80%;
+        left: 25%;
+        width: 50%;
+    }
+    #section1-2 .description{
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    #section1-2 .description .desText{
+        font-size: 12px;
+        text-align: center;
+    }
+    #section1-2{
+        margin-bottom: 40px;
+    }
 }
+
 /**/
 #section2{
     z-index: 2;
@@ -288,6 +348,12 @@
     #section2 .system .systemInner h2 img{
         width: 55%;
      }
+     #section2 .sec2DesText h2{
+        font-size: 24px;
+    }
+    #section2 .sec2DesText h2 span{
+        font-size: 24px;
+    }
 }
 @media screen and (max-width : 600px) {
     #section2{
@@ -361,20 +427,38 @@
         text-align: center;
     }
     #section2 .sec2DesText h2{
-        font-family: "sans";
-        font-size: 18px;
-        color: #fff;
+        font-size: 20px;
     }
     #section2 .sec2DesText h2 span{
-        font-size: 18px;
-        color: rgb(255,240,0);
-        font-style: italic;
+        font-size: 20px;
     }
     
 }
-@media screen and (max-width : 1200px) {
-    
+@media screen and (max-width : 400px) {
+    #section2 .system .systemInner span,p{
+        font-size: 28px;
+    }
+    #section2 .process li p{
+        font-size: 10px;
+        padding-top:7px;
+        word-break: keep-all;
+    }
+    #section2 .process li h4{
+        font-size: 18px;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+    #section2 .process li div p{
+        padding-top: 10px;
+    }
+    #section2 .sec2DesText h2{
+        font-size: 14px;
+    }
+    #section2 .sec2DesText h2 span{
+        font-size: 14px;
+    }
 }
+
 /*sec02*/
 /* #section2{
     position: relative;
@@ -587,20 +671,20 @@
         width: 40%;
     } 
     #section3 .spBubble .sp2{
-        left: 5%;
-        top: 5%;
+        left: 10%;
+        top: -10%;
     }
     #section3 .spBubble .sp3{
-        left: 55%;
-        top: 5%;
+        left: 50%;
+        top: -10%;
     }
     #section3 .spBubble .sp4{
-        left: 10%;
-        top: 38%;
+        left: 5%;
+        top: 68%;
     }
     #section3 .spBubble .sp5{
-        left: 50%;
-        top: 38%;
+        left: 55%;
+        top: 68%;
     }
     #section3 .description .desText h2{
         font-size: 28px;
@@ -615,12 +699,27 @@
     }
     #section3 .description{
         gap: 5%;
+        margin-bottom: 0px;
     }
     #section3 .description .desText h2{
         font-size: 16px;
     }
     #section3 .description .desText h4{
         font-size: 12px;
+    }
+}
+@media screen and (max-width:400px) {
+    #section3{
+        padding: 30px 0;
+    }
+    #section3 .description{
+        gap: 5%;
+    }
+    #section3 .description .desText h2{
+        font-size: 12px;
+    }
+    #section3 .description .desText h4{
+        font-size: 8px;
     }
 }
 
@@ -707,6 +806,13 @@
     }
     #section4 .description{
         font-size: 12px;
+    }
+}
+@media screen and (max-width:400px){
+
+    #section4 .description{
+        font-size: 8px;
+        padding: 5px 10px;
     }
 }
 
@@ -814,7 +920,7 @@
     padding-bottom: 10px;
 }
 #section6 .sec6Title h2 img:nth-child(3){
-    width: 80%;
+    width: 60%;
 }
 #section6 .redBox{
     display: flex;
@@ -856,7 +962,36 @@
 #section6 .description{
     padding-top: 30px;
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:1200px) {
+    
+    #section6 .sec6Title{
+        gap: 10px;
+    }
+    #section6 .sec6Title h2 img{
+        width: 90%;
+    }
+    #section6 .sec6Title h2 span{
+        font-size: 28px;
+    }
+
+    #section6 .redBox li{
+        width: 60%;
+    }
+    #section6 .redBox li img:first-child{
+        width: 100%;
+    }
+    #section6 .redBox li .coin{
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 35%;
+        left: 32%;
+    }
+}
+@media screen and (max-width:1000px) {
+    #section6 .sec6Title > div{
+        display: none;
+    }
     #section6 .sec6Title{
         display: flex;
         align-items: center;
@@ -870,17 +1005,28 @@
         align-items: center;
         padding-bottom: 20px;
     }
+    #section6 .redBox{
+        justify-content: center;
+    }
+    #section6 .redBox li{
+        width: 45%;
+    }
+}
+@media screen and (max-width:600px) {
+    
+    #section6 .sec6Title h2{
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
     #section6 .sec6Title span{
-        font-size: 16px;
+        font-size: 18px !important;
     }
     #section6 .sec6Title img{
         width: 80%;
     }
     #section6 .sec6Title img:nth-child(2){
         width: 70%;
-    }
-    #section6 .redBox li{
-        width: 60%;
     }
     #section6 .redBox li img:first-child{
         width: 100%;
@@ -907,6 +1053,11 @@
     }
     #section6 .description .desText h4{
         font-size: 12px;
+    }
+}
+@media screen and (max-width:400px) {
+    #section6 .sec6Title span{
+        font-size: 14px !important;
     }
 }
 
@@ -996,21 +1147,60 @@
     }
     #section7 .sec7Title p{
         font-size: 16px;
-        font-family: "S-Core";
-        font-weight: bold;
     }
     #section7 .sec7Title p span{
         font-size: 16px;
     }
     #section7 .sec7Calc span{
         font-size: 12px;
-        color: rgb(162,162,162);
     }
     #section7 .swiper {
         width: 800px;
       }
     #section7 .swiper .swiper-slide img{
         width: 90%;
+    }
+}
+@media screen and (max-width:400px) {
+    #section7{
+        padding: 30px 0;
+    }
+    #section7 .sec7Title{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    #section7 .sec7Title h2{
+        font-size: 30px;
+    }
+    #section7 .sec7Title h2 span{
+        font-size: 30px;
+        color: rgb(199,25,25);
+    }
+    #section7 .sec7Title p{
+        font-size: 14px;
+    }
+    #section7 .sec7Title p span{
+        font-size: 14px;
+    }
+    #section7 .sec7Calc span{
+        font-size: 8px;
+    }
+    #section7 .swiper {
+        width: 800px;
+      }
+    #section7 .swiper .swiper-slide img{
+        width: 70%;
+    }
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+        left: 32% !important;
+        top: 45% !important;
+    }
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+        right: 32% !important;
+        top: 45% !important;
+    }
+    #section7 .swiper{
+        padding-bottom: 20px;
     }
 }
 
@@ -1462,6 +1652,18 @@
         padding: 0px 0px;
     }
 }
+@media screen and (max-width: 400px) {
+    #section11 .sec11Text .title h2{
+        font-size: 16px;
+        padding-right: 15px;
+    }
+    #section11 .sec11Text p{
+        font-size: 12px;
+    }
+    #section11 .sec11Text p span{
+        font-size: 12px;
+    }
+}
 /*section12 pc*/
 #section12pc{
     position: relative;
@@ -1594,6 +1796,32 @@
     font-family: "sans";
     text-align: center;
 }
+@media screen and (max-width:400px) {
+    #section12mo .sec12Title h2{
+        font-size: 26px;
+    }
+    #section12mo .sec12Title p:nth-child(2){
+        font-size: 18px;
+    }
+    #section12mo .sec12Title p:nth-child(3){
+        font-size: 14px;
+    }
+    #section12mo .sec12Title p:nth-child(3) span::after{
+        height: 20px !important;
+    }
+    #section12mo .sec12Title{
+        padding-bottom: 60px;
+    }
+    #section12mo .sec12TBox h2 span{
+        font-size: 24px;
+    }
+    #section12mo .sec12TBox h6{
+        font-size: 12px;
+    }
+    #section12mo .sec12TBox p{
+        font-size: 10px;
+    }
+}
 /*section13*/
 #section13{
     position: relative;
@@ -1654,6 +1882,7 @@
     }
 }
 
+
 /*section14*/
 #section14{
     background: url("../img/17-뒷배경.jpg");
@@ -1679,6 +1908,7 @@
 #section14 .sec14Swiper{
     display: flex;
     justify-content: center;
+    position: relative;
 }
 #section14 .sec14Swiper .swiper2 {
     width: 1200px;
@@ -1705,8 +1935,83 @@
     transition: 0.5s;
     z-index: 1;
 }
+#section14 .sec14Swiper .swiper2-button-prev{
+    width: 50px !important;
+    height: 50px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 15%;
+    top: 50%;
+    z-index: 111;
+}
+#section14 .sec14Swiper .swiper2-button-next{
+    width: 50px !important;
+    height: 50px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 85%;
+    top: 50%;
+    z-index: 111;
+}
+
+@media screen and (max-width:1200px) {
+    #section14 .sec14Swiper .swiper2-button-prev{
+        width: 50px !important;
+        height: 50px;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 15%;
+        top: 90%;
+        z-index: 111;
+    }
+    #section14 .sec14Swiper .swiper2-button-next{
+        width: 50px !important;
+        height: 50px;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 85%;
+        top: 90%;
+    }
+}
 @media screen and (max-width:850px) {
-    
+    #section14{
+        background: url("../img/17-뒷배경.jpg");
+        padding: 50px 0;
+    }
+    #section14 .sec14Title h1{
+        font-size: 58px;
+    }
+    #section14 .sec14Title h4{
+        font-size: 22px;
+    }
+    #section14 .sec14Swiper .swiper2 {
+        width: 1200px;
+        height: 320px;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width:400px) {
+    #section14 .sec14Title{
+        text-align: center;
+        padding-bottom:20px;
+    }
+    #section14 .sec14Title h1{
+        font-size:28px !important;
+    }
+    #section14 .sec14Title h4{
+        font-size: 10px !important;
+    }
+    #section14 .sec14Swiper .swiper2 {
+        width: 1200px;
+        height: 240px !important;
+        overflow: hidden;
+    }
+    #section14 .sec14Swiper .swiper2-button-prev{
+        display: none !important;
+    }
+    #section14 .sec14Swiper .swiper2-button-next{
+        display: none !important;
+    }
 }
 
 
@@ -1727,6 +2032,7 @@
         overflow: hidden;
     }
 }
+
 /*section15*/
 #section15{
     background: url("../img/18-full뒷배경.png");
@@ -1748,7 +2054,7 @@
     align-items: center;
 }
 #section15 .layout form{
-    padding-top: 50px;
+    padding: 50px 0;
     flex: 1;
     width: 80%;
 }
@@ -1763,7 +2069,7 @@
     left: -10px;
     font-weight: bold;
     transform: translate(-50%,-50%);
-    top: 60%;
+    top: 50%;
     color: red;
 }
 #section15 form ul{
@@ -1819,9 +2125,9 @@
     flex-direction: column;
     align-items: center;
 }
-#section15 .sec15AgreeBox span{ 
+#section15 .sec15AgreeBox span.cert{ 
     font-size: 20px;
-    font-family: "S-Core";
+    font-family: "S-Core-EBold";
 }
 #section15 .sec15AgreeBox > div > div{
     text-align: center;
@@ -1829,6 +2135,8 @@
 }
 #section15 .sec15AgreeBox > div > div:nth-child(2) > span{
     color:rgb(162,162,162);
+    font-family: "s-core";
+    font-size: 20px;
 }
 #section15 .sec15AgreeBox > div:first-child{
     padding-bottom: 15px;
@@ -1839,16 +2147,82 @@
 }
 #section15 input[type=button]{
     margin-top: 35px;
-    padding: 10px 30px;
+    padding: 10px 80px;
     background: black;
     color: white;
+    font-size: 18px;
+    font-family: "S-Core-Bold";
+}
+#section15 form{
+
+}
+
+@media screen and (max-width:1000px) {
+    #section15 .layout .firstBox img{
+        width: 70%;
+    }
+    #section15 form span{
+        font-size: 18px;
+    }
+    #section15 .sec15AgreeBox span.cert{ 
+        font-size: 16px;
+        font-family: "S-Core-EBold";
+    }
+    #section15 .sec15AgreeBox > div > div:nth-child(2) > span{
+        color:rgb(162,162,162);
+        font-family: "s-core";
+        font-size: 16px;
+    }
+    #section15 form ul{
+        gap: 5px;
+    }
+    #section15 input[type=button]{
+        font-size: 16px;
+        padding: 10px 50px;
+    }
+    #section15 form ul li{
+        width: 90%;
+    }
+    #section15 .sec15AgreeBox{
+        width: 90%;
+    }
+    #section15 .btn{
+        width: 90%;
+    }
+}
+@media screen and (max-width:800px) {
+    #section15 .layout .firstBox img{
+        width: 70%;
+    }
+    #section15 form span{
+        font-size: 16px;
+    }
+    #section15 .sec15AgreeBox span.cert{ 
+        font-size: 14px;
+        font-family: "S-Core-EBold";
+    }
+    #section15 .sec15AgreeBox > div > div:nth-child(2) > span{
+        color:rgb(162,162,162);
+        font-family: "s-core";
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width:600px) {
+    #section15{
+        background: #fff;
+    }
 
     #section15 .layout{
         display: flex;
         flex-direction: column-reverse;
+    }
+    #section15 .layout .firstBox{
+        background: linear-gradient(360deg,rgb(16,16,16),rgb(209, 52, 52));
+        padding: 60px 0;
+    }
+    #section15 .layout .firstBox img{
+        width: 60%;
     }
     #section15 .sec15AgreeBox{
         background: rgb(248,248,248);
@@ -1863,5 +2237,12 @@
         padding-top: 50px;
         flex: 1;
         width: 100%;
+    }
+    #section15 form ul{
+        align-items: center;
+    }
+    #section15 .btn{
+        width: 100%;
+        text-align: center;
     }
 }

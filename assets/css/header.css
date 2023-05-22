@@ -1,7 +1,9 @@
 header{
     background-color: rgb(2,2,1);
     padding: 10px 30px;
-
+    top:0;
+    width: 100%;
+    z-index: 999;
 }
 
 header ul li{
@@ -9,7 +11,7 @@ header ul li{
     font-family: "sans";
     font-weight: bold;
     color: white;
-
+    cursor: pointer;
 }
 
 header .headerMenuBox{
@@ -98,6 +100,24 @@ header .headerMenuBox .moNavBox li{
         border-radius: 10px;
         width: 70%;
         height: 70%;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    header .headerMenuBox div img{
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 60%;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    header .headerMenuBox div img{
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 40%;
         padding: 5px;
     }
 }
