@@ -87,8 +87,8 @@ div #sideBar{
     line-height: 1.2;
     text-align: center;
 }
-#section1-2 .description .desText:nth-child(1){
-    letter-spacing: -1;
+#section1-2 .description .desText h2:first-child{
+    letter-spacing: -3px;
 }
 #section1-2 .description .desText .FR {
     color: rgb(211,27,3);
@@ -119,6 +119,9 @@ div #sideBar{
     #section1-2 .description .desText{
         font-size: 32px;
     }
+    #section1-2 .description .desText h2:first-child{
+        letter-spacing: -2px;
+    }
     #section1-2 .description img{
         width: 4%;
     }
@@ -134,6 +137,12 @@ div #sideBar{
     }
 }
 @media screen and (max-width:600px) {
+    #section1-2{
+        position: relative;
+        z-index: 2;
+        margin-top: 20%;
+        margin-bottom: 40px;
+    }
     #section1 .section1Content .title{
         top: 5%;
         left: 20%;
@@ -154,6 +163,9 @@ div #sideBar{
     #section1-2 .description .desText{
         font-size: 16px;
         text-align: center;
+    }
+    #section1-2 .description .desText h2:first-child{
+        letter-spacing: -1px;
     }}
 @media screen and (max-width:400px) {
     #section1 .section1Content .title{
@@ -180,6 +192,7 @@ div #sideBar{
     #section1-2{
         margin-bottom: 40px;
     }
+    
 }
 
 /**/
@@ -231,7 +244,7 @@ div #sideBar{
 }
 #section2 .process .line{
     position: absolute;
-    border: 2px dotted red;
+    border: 2px dashed rgb(211,70,70);
     width: 59%;
     top: 41%;
     left: 21%;
@@ -1901,6 +1914,7 @@ div #sideBar{
 #section14{
     background: url("../img/17-뒷배경.jpg");
     padding: 100px 0;
+    background-size: cover;
 }
 #section14 .sec14Title{
     text-align: center;
@@ -1912,12 +1926,14 @@ div #sideBar{
 }
 #section14 .sec14Title h4{
     font-size: 28px;
-    font-family: "S-Core-bold";
+    font-family: "S-Core";
 }
 #section14 .sec14Title h4:nth-child(2){}
 #section14 .sec14Title h4:nth-child(3){}
 #section14 .sec14Title h4:nth-child(3) span{
     color: rgb(199,25,25);
+    font-style: italic;
+    padding-right: 2px;
 }
 #section14 .sec14Swiper{
     display: flex;
@@ -2044,6 +2060,7 @@ div #sideBar{
     #section14{
         background: url("../img/17-뒷배경.jpg");
         padding: 50px 0;
+        background-size: cover;
     }
     #section14 .sec14Title h1{
         font-size: 42px;
@@ -2134,14 +2151,20 @@ div #sideBar{
 #section15 form ul label > .email span{
     text-align: center;
     flex: 0.3;
+    color: rgb(205,205,205);
 }
 #section15 form ul label > .email select{
     flex: 1;
+    height: 45px;
+    border: 1px solid rgb(205,205,205);
+    color: rgb(73, 73, 73);
+    font-size: 16px;
 }
 #section15 form ul label input[type=text]{
     height: 45px;
-    border: 1px solid rgb(162,162,162);
+    border: 1px solid rgb(205,205,205);
     width: 100%;
+
 }
 
 #section15 .sec15AgreeBox{
@@ -2243,6 +2266,12 @@ div #sideBar{
 }
 
 @media screen and (max-width:600px) {
+    #section15 form h2{
+        text-align: center;
+        padding-bottom: 40px;
+        font-size: 32px;
+        font-family: "s-core-bold";
+    }
     #section15 form ul{
         gap: 15px;
         padding: 0 20px;
