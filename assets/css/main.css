@@ -1,7 +1,21 @@
 /*sidebar*/
+div .overray{
+    display: none;
+    transition: 1s;
+}
+div .overray.on{
+    display: block;
+    opacity: 0.5;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 998;
+    position: fixed;
+    transition: 1s;
+}
 div #sideBar{
     position: fixed;
-    z-index: 999;
+    z-index: 3;
     top: 75%;
     right: 2%;
 }
@@ -1685,9 +1699,9 @@ div #sideBar{
     left: 27.8%;
 }
 #section12pc .sec12Content .sec12Text{
-    top:48.5%;
-    width: 32%;
-    left: 20%;
+    top:47.5%;
+    width: 35%;
+    left: 18%;
 }
 /*section12 mo*/
 #section12mo{
@@ -1954,8 +1968,18 @@ div #sideBar{
     z-index: 111;
 }
 
+@media screen and (max-width:1700px) {
+    #section14 .sec14Swiper .swiper2-button-prev{
+        left: 10%;
+    }
+    #section14 .sec14Swiper .swiper2-button-next{
+        left: 91%;
+    }
+}
+
 @media screen and (max-width:1200px) {
     #section14 .sec14Swiper .swiper2-button-prev{
+        opacity: 0;
         width: 50px !important;
         height: 50px;
         position: absolute;
@@ -1965,6 +1989,7 @@ div #sideBar{
         z-index: 111;
     }
     #section14 .sec14Swiper .swiper2-button-next{
+        opacity: 0;
         width: 50px !important;
         height: 50px;
         position: absolute;
@@ -2063,7 +2088,7 @@ div #sideBar{
     font-weight: bolder;
     font-family: "S-Core-Bold";
 }
-#section15 form ul li .import::before{
+#section15 form ul label .import::before{
     content: "*";
     position: absolute;
     left: -10px;
@@ -2077,41 +2102,43 @@ div #sideBar{
     flex-direction: column;
     gap: 10px;
 }
-#section15 form ul li{
+#section15 form ul label{
     display: flex;
     position: relative;
     align-items: center;
     width: 80%;
 }
-#section15 form ul li span{
+#section15 form ul label span{
     flex: 2;
 }
-#section15 form ul li:last-child{
+#section15 form ul label:last-child{
     padding: 20px 0;
 }
 #section15 form ul li:last-child span{
     padding-left: 10px;
 }
-#section15 form ul li > div{
+#section15 form ul label > div{
     flex: 3;
     display: flex;
 }
-#section15 form ul li > .email{
+#section15 form ul label > .email{
     flex: 3;
     display: flex;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
-#section15 form ul li > .email input{
+#section15 form ul label > .email input{
     flex: 1;
 }
-#section15 form ul li > .email span{
+#section15 form ul label > .email span{
     text-align: center;
     flex: 0.3;
 }
-#section15 form ul li > .email select{
+#section15 form ul label > .email select{
     flex: 1;
 }
-#section15 form ul li input[type=text]{
+#section15 form ul label input[type=text]{
     height: 45px;
     border: 1px solid rgb(162,162,162);
     width: 100%;
@@ -2125,6 +2152,15 @@ div #sideBar{
     flex-direction: column;
     align-items: center;
 }
+#section15 .detail{
+    background: none;
+    border: 1px solid rgb(162,162,162);
+    padding: 1px 5px;
+    margin-left: 5px;
+    font-family: "S-Core";
+    color: rgb(162,162,162);
+    cursor: pointer;
+}
 #section15 .sec15AgreeBox span.cert{ 
     font-size: 20px;
     font-family: "S-Core-EBold";
@@ -2132,11 +2168,6 @@ div #sideBar{
 #section15 .sec15AgreeBox > div > div{
     text-align: center;
     padding-bottom: 5px;
-}
-#section15 .sec15AgreeBox > div > div:nth-child(2) > span{
-    color:rgb(162,162,162);
-    font-family: "s-core";
-    font-size: 20px;
 }
 #section15 .sec15AgreeBox > div:first-child{
     padding-bottom: 15px;
@@ -2153,10 +2184,14 @@ div #sideBar{
     font-size: 18px;
     font-family: "S-Core-Bold";
 }
-#section15 form{
-
+#section15 .sec15AgreeBox .check{
+    font-size: 20px;
+    font-family: "S-Core";
+    color:rgb(162,162,162);
 }
-
+#section15 input[type=radio]{
+    margin: 0 5px;
+}
 @media screen and (max-width:1000px) {
     #section15 .layout .firstBox img{
         width: 70%;
@@ -2189,6 +2224,9 @@ div #sideBar{
     #section15 .btn{
         width: 90%;
     }
+    #section15 .sec15AgreeBox .check{
+        font-size: 14px;
+    }
 }
 @media screen and (max-width:800px) {
     #section15 .layout .firstBox img{
@@ -2201,11 +2239,7 @@ div #sideBar{
         font-size: 14px;
         font-family: "S-Core-EBold";
     }
-    #section15 .sec15AgreeBox > div > div:nth-child(2) > span{
-        color:rgb(162,162,162);
-        font-family: "s-core";
-        font-size: 14px;
-    }
+    
 }
 
 @media screen and (max-width:600px) {
@@ -2219,7 +2253,7 @@ div #sideBar{
 
     #section15 .layout{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     #section15 .layout .firstBox{
         background: linear-gradient(45deg,rgb(16,16,16),rgb(209, 52, 52));
@@ -2248,5 +2282,14 @@ div #sideBar{
     #section15 .btn{
         width: 100%;
         text-align: center;
+    }
+    #section15 form ul label:last-child{
+        padding: 10px 0;
+    }
+    #section15 form ul label span{
+        flex: 1.5;
+    }
+    #section15 form ul label{
+        width: 90%;
     }
 }

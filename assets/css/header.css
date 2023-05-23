@@ -3,7 +3,6 @@ header{
     padding: 10px 30px;
     top:0;
     width: 100%;
-    z-index: 999;
 }
 
 header ul li{
@@ -44,9 +43,8 @@ header .headerMenuBox .navIcon{
 header .headerMenuBox .moNavBox{
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     width: 250px;
-    max-width: 0px;
     height: 100vh;
     overflow: hidden;
     background-color: #fff;
@@ -55,16 +53,15 @@ header .headerMenuBox .moNavBox{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 99;
-    transition: max-width .5s;
-
+    z-index: 999;
+    transition: 0.5s;
 }
+
 header .headerMenuBox .moNavBox.on{
     position: fixed;
     top: 0;
     left: 0;
     width: 250px;
-    max-width: 200px;
     height: 100vh;
     overflow: hidden;
     background-color: #fff;
@@ -73,9 +70,8 @@ header .headerMenuBox .moNavBox.on{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 99;
-    transition: max-width .5s;
-
+    z-index: 999;
+    transition: 0.5s;
 }
 header .headerMenuBox .moNavBox.on li{
     color: black;
@@ -119,5 +115,15 @@ header .headerMenuBox .moNavBox li{
         border-radius: 10px;
         width: 40%;
         padding: 5px;
+    }
+    header{
+        background-color: rgb(2,2,1);
+        padding: 10px 20px;
+        top:0;
+        width: 100%;
+    }
+    header .headerMenuBox .headerLogoBox{
+        display: flex;
+        justify-content: flex-start;
     }
 }

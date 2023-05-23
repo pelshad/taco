@@ -33,6 +33,9 @@ footer .wrap12{
         gap: 40px;
         align-items: center;
     }
+    footer .wrap12 .logo img{
+        width: 80%;
+    }
     footer span{
         display: block;
         text-align: center;
