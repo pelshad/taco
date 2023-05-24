@@ -42,7 +42,7 @@
 
 :root {
 	accent-color: rgb(211,27,3);
-
+  cursor: default;
 }
 html::-webkit-scrollbar {
   width: 10px;
